@@ -2,9 +2,9 @@
 # this repository contains the full copyright notices and license terms.
 
 from trytond.pool import Pool
-from .sale import *
+from . import sale
 
 def register():
     Pool.register(
-        Sale,
+        sale.Sale,
         module='sale_to_invoice', type_='model')
